@@ -21,7 +21,7 @@ async def on_message(message):
             count = 0
             for member in client.get_all_members() :
                 count += 1
-            m = "報告します！ 現在 " + str(count) + "エラリストが参加中です！"
+            m = "報告します！ 現在 " + str(count) + "人のエラリストが参加中です！"
             # メッセージが送られてきたチャンネルへメッセージを送ります
             await client.send_message(message.channel, m)
 
