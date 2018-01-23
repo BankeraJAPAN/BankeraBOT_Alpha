@@ -1,9 +1,8 @@
 import discord
 
-token = "NDA0NjE0MDc1OTU2NDYxNTY4.DUi32g.4VQ5i5U0Gnak-bv0hKD1XM4mjbI"
+token = "NDA1MzY1ODI0NDQyOTkwNTky.DUjV6A.kVeYsW0rldoLX4BtKczQCiXqI58"
 
 client = discord.Client()
-
 client.get_all_members()
 
 @client.event
@@ -16,7 +15,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("!bank"):
+    if message.content.startswith("?エラリスト") | message.content.startswith("？エラリスト") :
         # 送り主がBotだった場合反応したくないので
         if client.user != message.author:
             count = 0
